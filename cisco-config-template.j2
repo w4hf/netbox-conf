@@ -4,3 +4,9 @@ aaa new-model
 aaa authentication login default local
 aaa authorization exec default local 
 !
+ip dns server
+ip dns primary w4hf.home soa {{ dns }} {{ dns2 }} 21600 900 7776000 86400
+!
+no ip domain lookup nsap
+ip domain name home
+!
