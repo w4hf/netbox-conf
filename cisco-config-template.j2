@@ -8,5 +8,5 @@ ip dns server
 ip dns primary w4hf.home soa {{ dns }} {{ dns2 }} 21600 900 7776000 86400
 !
 no ip domain lookup nsap
-ip domain name home
+ip domain name {% raw %}{{ var_secret }}{% raw %}
 !
